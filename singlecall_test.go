@@ -60,7 +60,7 @@ func TestDoDup(t *testing.T) {
 			wg.Done()
 		}()
 	}
-	time.Sleep(100 * time.Millisecond)
+	time.Sleep(10000 * time.Millisecond)
 
 	c <- "bar"
 	wg.Wait()
